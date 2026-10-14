@@ -4,21 +4,29 @@ export default function Home() {
       style={{
         minHeight: "100vh",
         background: "#090909",
-        color: "white",
+        color: "#fff",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "Arial, sans-serif",
         textAlign: "center",
         padding: "24px",
+        fontFamily: "Arial, sans-serif",
       }}
     >
-      <h1 style={{ color: "#ef2222", fontSize: "48px" }}>
+      <h1
+        style={{
+          color: "#ed1c24",
+          fontSize: "clamp(38px, 7vw, 76px)",
+          fontWeight: 900,
+          letterSpacing: "4px",
+          marginBottom: "12px",
+        }}
+      >
         LEGEND ROLEPLAY
       </h1>
 
-      <p style={{ fontSize: "18px", color: "#cccccc" }}>
+      <p style={{ color: "#ccc", fontSize: "18px" }}>
         Welcome to Legend RolePlay
       </p>
 
@@ -27,16 +35,17 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         style={{
-          marginTop: "24px",
-          padding: "14px 28px",
-          background: "#ef2222",
-          color: "white",
+          marginTop: "28px",
+          padding: "15px 32px",
+          background: "#ed1c24",
+          color: "#fff",
           textDecoration: "none",
           borderRadius: "8px",
           fontWeight: "bold",
+          transition: "0.2s",
         }}
       >
-        Join Our Discord
+        JOIN OUR DISCORD
       </a>
     </main>
   );
